@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Leadsguru | Digital Skills & Online Opportunities</title>
+  <title>Leadsguru | Digital Skills</title>
 
   <style>
     * {
@@ -19,25 +18,24 @@
     }
 
     body {
-      background: #f6f7fb;
-      color: #171717;
+      background: #f5f6fa;
+      color: #222;
     }
 
-    /* HEADER */
     header {
       background: #111;
       color: white;
-      padding: 15px 6%;
+      padding: 16px 6%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
     }
 
     .logo {
-      font-size: 25px;
+      font-size: 26px;
       font-weight: bold;
       color: #ffd21f;
     }
@@ -45,24 +43,23 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 18px;
+      margin-left: 15px;
       font-size: 14px;
     }
 
-    .login-btn {
+    .login {
       background: #ffd21f;
-      color: #111;
-      padding: 10px 18px;
+      color: #111 !important;
+      padding: 9px 16px;
       border-radius: 7px;
       font-weight: bold;
     }
 
-    /* HERO */
     .hero {
-      background: linear-gradient(135deg, #1d0755, #111);
+      background: linear-gradient(135deg, #260b63, #111);
       color: white;
       text-align: center;
-      padding: 75px 20px;
+      padding: 80px 20px;
     }
 
     .hero h1 {
@@ -78,11 +75,11 @@
       max-width: 700px;
       margin: auto;
       line-height: 1.7;
-      font-size: 18px;
       color: #ddd;
+      font-size: 18px;
     }
 
-    .main-btn {
+    .btn {
       display: inline-block;
       margin-top: 28px;
       padding: 14px 28px;
@@ -93,23 +90,21 @@
       font-weight: bold;
     }
 
-    /* SECTION */
     .section {
       padding: 55px 6%;
       text-align: center;
     }
 
-    .section-title {
+    .title {
       font-size: 30px;
       margin-bottom: 10px;
     }
 
-    .section-subtitle {
+    .subtitle {
       color: #666;
       margin-bottom: 30px;
     }
 
-    /* CARDS */
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -118,25 +113,20 @@
     }
 
     .card {
-      background: white;
       width: 290px;
+      background: white;
       padding: 28px 22px;
       border-radius: 14px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
     }
 
     .icon {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 15px;
     }
 
     .card h3 {
-      color: #24105f;
+      color: #260b63;
       margin-bottom: 12px;
       font-size: 21px;
     }
@@ -146,29 +136,19 @@
       line-height: 1.6;
     }
 
-    /* PLANS */
     .plans {
       background: #111;
       color: white;
     }
 
-    .plans .section-subtitle {
+    .plans .subtitle {
       color: #bbb;
-    }
-
-    .plan {
-      background: white;
-      color: #222;
-    }
-
-    .plan h3 {
-      font-size: 24px;
     }
 
     .price {
       font-size: 28px;
       font-weight: bold;
-      color: #24105f;
+      color: #260b63;
       margin: 15px 0;
     }
 
@@ -183,25 +163,8 @@
       font-weight: bold;
     }
 
-    /* PRODUCTS */
-    .product {
-      border: 1px solid #eee;
-    }
-
-    .product .buy-btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 11px 22px;
-      background: #24105f;
-      color: white;
-      text-decoration: none;
-      border-radius: 7px;
-      font-weight: bold;
-    }
-
-    /* CONTACT */
     .contact {
-      background: linear-gradient(135deg, #24105f, #111);
+      background: linear-gradient(135deg, #260b63, #111);
       color: white;
       text-align: center;
       padding: 60px 20px;
@@ -209,8 +172,8 @@
 
     .contact h2 {
       color: #ffd21f;
-      margin-bottom: 15px;
       font-size: 30px;
+      margin-bottom: 15px;
     }
 
     .contact p {
@@ -218,7 +181,6 @@
       line-height: 1.6;
     }
 
-    /* FOOTER */
     footer {
       background: #000;
       color: #aaa;
@@ -227,7 +189,6 @@
       font-size: 14px;
     }
 
-    /* MOBILE */
     @media (max-width: 700px) {
 
       header {
@@ -258,10 +219,6 @@
         padding: 45px 15px;
       }
 
-      .section-title {
-        font-size: 26px;
-      }
-
       .card {
         width: 100%;
         max-width: 350px;
@@ -272,53 +229,37 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
-
-    <div class="logo">
-      Leadsguru
-    </div>
+    <div class="logo">Leadsguru</div>
 
     <nav>
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
       <a href="#plans">Plans</a>
       <a href="#products">Products</a>
-      <a href="#contact" class="login-btn">Login</a>
+      <a href="#contact" class="login">Login</a>
     </nav>
-
   </header>
 
-
-  <!-- HERO -->
   <section class="hero" id="home">
-
     <h1>
       Build Your <span>Digital Future</span>
     </h1>
 
     <p>
-      Leadsguru के साथ digital skills, online work और
-      नए opportunities के बारे में सीखने की शुरुआत करें।
-      सही जानकारी और लगातार learning के साथ अपने skills को बेहतर बनाएं।
+      Leadsguru ke saath digital skills, online work aur
+      naye opportunities ke baare mein seekhne ki shuruaat karein.
     </p>
 
-    <a href="#contact" class="main-btn">
-      Get Started
-    </a>
-
+    <a href="#contact" class="btn">Get Started</a>
   </section>
 
-
-  <!-- SKILLS -->
   <section class="section" id="skills">
 
-    <h2 class="section-title">
-      हमारे साथ क्या सीख सकते हैं?
-    </h2>
+    <h2 class="title">Digital Skills</h2>
 
-    <p class="section-subtitle">
-      अपने digital skills को step-by-step बेहतर बनाएं।
+    <p class="subtitle">
+      Apne skills ko step-by-step improve karein.
     </p>
 
     <div class="cards">
@@ -327,8 +268,8 @@
         <div class="icon">💻</div>
         <h3>Digital Skills</h3>
         <p>
-          Digital world में काम आने वाली useful skills
-          सीखने और समझने की शुरुआत करें।
+          Digital world mein kaam aane wali useful skills
+          seekhne ki shuruaat karein.
         </p>
       </div>
 
@@ -336,8 +277,8 @@
         <div class="icon">📱</div>
         <h3>Online Work</h3>
         <p>
-          Online work और digital opportunities के
-          बारे में जानकारी प्राप्त करें।
+          Online work aur digital opportunities ke baare mein
+          information prapt karein.
         </p>
       </div>
 
@@ -345,148 +286,108 @@
         <div class="icon">🎯</div>
         <h3>Guidance</h3>
         <p>
-          सही direction और practical guidance के साथ
-          अपने अगले कदम की planning करें।
+          Sahi guidance ke saath apne next step ki planning karein.
         </p>
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- PLANS -->
   <section class="section plans" id="plans">
 
-    <h2 class="section-title">
-      Membership Plans
-    </h2>
+    <h2 class="title">Membership Plans</h2>
 
-    <p class="section-subtitle">
-      अपने लिए suitable plan चुनें।
+    <p class="subtitle">
+      Apne liye suitable plan choose karein.
     </p>
 
     <div class="cards">
 
-      <div class="card plan">
-        <h3>🥇 Gold</h3>
+      <div class="card">
+        <div class="icon">🥇</div>
+        <h3>Gold</h3>
         <div class="price">₹6,352</div>
-        <p>
-          Basic learning और digital skills के लिए।
-        </p>
-        <a href="#contact" class="plan-btn">
-          View Details
-        </a>
+        <p>Basic learning aur digital skills ke liye.</p>
+        <a href="#contact" class="plan-btn">View Details</a>
       </div>
 
-      <div class="card plan">
-        <h3>💎 Platinum</h3>
+      <div class="card">
+        <div class="icon">💎</div>
+        <h3>Platinum</h3>
         <div class="price">₹11,352</div>
-        <p>
-          Advanced learning और additional guidance के लिए।
-        </p>
-        <a href="#contact" class="plan-btn">
-          View Details
-        </a>
+        <p>Advanced learning aur additional guidance ke liye.</p>
+        <a href="#contact" class="plan-btn">View Details</a>
       </div>
 
-      <div class="card plan">
-        <h3>👑 Diamond</h3>
+      <div class="card">
+        <div class="icon">👑</div>
+        <h3>Diamond</h3>
         <div class="price">₹15,352</div>
-        <p>
-          Premium learning और ज्यादा features के लिए।
-        </p>
-        <a href="#contact" class="plan-btn">
-          View Details
-        </a>
+        <p>Premium learning aur additional features ke liye.</p>
+        <a href="#contact" class="plan-btn">View Details</a>
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- PRODUCTS -->
   <section class="section" id="products">
 
-    <h2 class="section-title">
-      Our Products
-    </h2>
+    <h2 class="title">Our Products</h2>
 
-    <p class="section-subtitle">
-      हमारे available products और services देखें।
+    <p class="subtitle">
+      Hamare products aur services dekhein.
     </p>
 
     <div class="cards">
 
-      <div class="card product">
+      <div class="card">
         <div class="icon">📚</div>
         <h3>Digital Learning</h3>
         <p>
-          Digital learning resources और training के बारे में
-          जानकारी प्राप्त करें।
+          Digital learning resources aur training ke baare mein
+          information prapt karein.
         </p>
-
-        <a href="#contact" class="buy-btn">
-          Buy / Enquire
-        </a>
+        <a href="#contact" class="plan-btn">Enquire Now</a>
       </div>
 
-      <div class="card product">
+      <div class="card">
         <div class="icon">🎓</div>
         <h3>Skill Training</h3>
         <p>
-          Skills सीखने के लिए available training options
-          के बारे में जानकारी लें।
+          Skills learning ke available training options ke
+          baare mein information lein.
         </p>
-
-        <a href="#contact" class="buy-btn">
-          Buy / Enquire
-        </a>
+        <a href="#contact" class="plan-btn">Enquire Now</a>
       </div>
 
-      <div class="card product">
+      <div class="card">
         <div class="icon">🚀</div>
         <h3>Premium Access</h3>
         <p>
-          Premium plans और available features की details
-          जानने के लिए contact करें।
+          Premium plans aur features ki details ke liye
+          contact karein.
         </p>
-
-        <a href="#contact" class="buy-btn">
-          Buy / Enquire
-        </a>
+        <a href="#contact" class="plan-btn">Enquire Now</a>
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- CONTACT -->
   <section class="contact" id="contact">
 
-    <h2>
-      Leadsguru से जुड़ें
-    </h2>
+    <h2>Leadsguru se judein</h2>
 
     <p>
-      अगर आपको digital skills, online work या plans के बारे में
-      जानकारी चाहिए, तो हमसे contact करें।
+      Digital skills, online work ya plans ki information ke liye
+      humse contact karein.
     </p>
 
-    <a href="#" class="main-btn">
-      WhatsApp पर Message करें
-    </a>
+    <a href="#" class="btn">WhatsApp par Message karein</a>
 
   </section>
 
-
-  <!-- FOOTER -->
   <footer>
-
     © 2026 Leadsguru. All Rights Reserved.
-
   </footer>
 
 </body>
